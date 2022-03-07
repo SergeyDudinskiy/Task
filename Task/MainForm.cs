@@ -331,8 +331,7 @@ namespace Task
 
         private void RefreshPictureBox()
         {
-            Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            pictureBox1.Image = bmp;
+            pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             g = Graphics.FromImage(pictureBox1.Image);
             float thickness = pictureBox1.Height / 15;
             float newY = 0;
